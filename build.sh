@@ -1,11 +1,11 @@
 #!/bin/bash
 source functions.sh
 
-echo "Manage the packer code available at [$WORKSPACE] and have mounted at [$CODEBASE_DIR]"
+echo "Manage the packer code available at [$WORKSPACE] and have mounted at [${CODEBASE_DIR}/${PACKER_DIR}]"
 sleep  $SLEEP_DURATION
 
 
-cd  ${WORKSPACE}/${CODEBASE_DIR}
+cd  ${WORKSPACE}/${CODEBASE_DIR}/${PACKER_DIR}
 logInfoMessage "packer ${INSTRUCTION}"
 
 packer ${INSTRUCTION} ${EXTRA_VARS}
