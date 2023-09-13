@@ -1,5 +1,10 @@
 #!/bin/bash
-source functions.sh
+
+source  functions.sh
+source  log-functions.sh
+source  str-functions.sh
+source  file-functions.sh
+source  aws-functions.sh
 
 echo "Manage the packer code available at [$WORKSPACE] and have mounted at [${CODEBASE_DIR}/${PACKER_DIR}]"
 sleep  $SLEEP_DURATION
