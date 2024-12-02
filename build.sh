@@ -12,7 +12,7 @@ sleep  $SLEEP_DURATION
 
 cd  ${WORKSPACE}/${CODEBASE_DIR}/${PACKER_DIR}
 logInfoMessage "packer ${INSTRUCTION}"
-packer init
+
 packer ${INSTRUCTION} ${EXTRA_VARS}
 
 TASK_STATUS=$?
