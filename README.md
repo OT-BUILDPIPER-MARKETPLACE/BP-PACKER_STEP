@@ -10,5 +10,5 @@ I'll provide the capability to manage the lifecycle of packer code.
 ```
 git submodule init
 git submodule update
-docker build -t registry.buildpiper.in/sonar-scan:0.1 . 
+docker build -t registry.buildpiper.in/packer-step:0.1 . 
 ```
