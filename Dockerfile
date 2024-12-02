@@ -6,7 +6,7 @@ RUN apk add jq
 ENV SLEEP_DURATION 5s
 
 COPY build.sh .
-COPY BP-BASE-SHELL-STEPS .
+ADD BP-BASE-SHELL-STEPS /opt/buildpiper/shell-functions/
 ENV INSTRUCTION build
 ENV PACKER_DIR ""
 ENV EXTRA_VARS ""
